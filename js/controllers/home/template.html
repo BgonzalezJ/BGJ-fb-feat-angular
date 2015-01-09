@@ -1,0 +1,20 @@
+<div>
+	{{message}}
+</div>
+
+<div>
+	{{user}}
+</div>
+
+<button ng-click="loginFB();">
+	Login FB
+</button>
+
+<button ng-click="getPhotos();">Get photos</button>
+
+
+<ul>
+	<li ng-repeat="album in albums" ng-if="albums.length > 0">
+		<a ng-href="#album/{{album.id}}">{{album.name}}</a>
+	</li>
+</ul>
